@@ -24,10 +24,14 @@ public class CheckDigit
    public static boolean isValid(int numWithCheckDigit)    
    {      
      /* to be implemented in part (b) */    
-     if(numWithCheckDigit%10 == getCheck(numWithCheckDigit/10){
-return true;
+     int check = numWithCheckDigit%10;
+     int num = numWithCheckDigit/10;
+     int newCheck = getCheck(num);
+     if(check == newCheck){
+       return true;}
+     else{
+       return false;
      }
-     return false;
    }    
    
    /** Returns the number of digits in num. */    
